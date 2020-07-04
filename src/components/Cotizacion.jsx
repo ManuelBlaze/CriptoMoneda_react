@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from "@emotion/styled";
 
 const ResultadoDiv = styled.div`
@@ -35,7 +36,7 @@ const Cotizacion = ({resultado}) => {
     return (
 			<ResultadoDiv>
 				<Precio>
-					{resultado.FROMSYMBOL}: <span>{resultado.PRICE}</span>
+					{resultado.FROMSYMBOL} : <span>{resultado.PRICE}</span>
 				</Precio>
                 <GridFather>
                     <div>
@@ -57,6 +58,10 @@ const Cotizacion = ({resultado}) => {
                 </GridFather>
 			</ResultadoDiv>
 		);
+}
+
+Cotizacion.propTypes = {
+    resultado: PropTypes.object.isRequired
 }
 
 export default Cotizacion
