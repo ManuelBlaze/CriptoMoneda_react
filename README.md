@@ -1,3 +1,6 @@
+<h1>Cotizador de Cripto Monedas</h1>
+Proyecto de practica React, cotizador de Criptomonedas consumiendo Api de https://min-api.cryptocompare.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
