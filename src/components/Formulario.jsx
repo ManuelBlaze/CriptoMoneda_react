@@ -24,7 +24,7 @@ const Boton = styled.input`
     }
 `;
 
-const Formulario = () => {
+const Formulario = ({ setMoneda, setCripto }) => {
 
     //State dle listado desde la API
     const [listCripto, setListCripto] = useState([]);
@@ -69,6 +69,8 @@ const Formulario = () => {
 
         //pasar los datos al componente principal
         setError(false);
+        setMoneda(moneda);
+        setCripto(cripto);
     }
     
 
