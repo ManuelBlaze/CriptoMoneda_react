@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import axios from 'axios';
 import imagen from './cryptomonedas.png';
 import Formulario from "./components/Formulario";
+import Cotizacion from "./components/Cotizacion";
 
 const Contenedor = styled.div`
   max-width: 900px;
@@ -75,6 +76,10 @@ function App() {
         <Formulario 
           setMoneda = {setMoneda}
           setCripto = {setCripto}
+        />
+
+        <Cotizacion 
+          resultado={resultado}
         />
       </div>
     </Contenedor>

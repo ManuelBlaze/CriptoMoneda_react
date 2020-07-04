@@ -88,6 +88,8 @@ const Formulario = ({ setMoneda, setCripto }) => {
                 type="submit"
                 value="Calcular"
             />
+
+            
         </form>
     )
 }
